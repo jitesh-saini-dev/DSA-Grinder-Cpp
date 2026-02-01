@@ -1,0 +1,17 @@
+// leetcode 1979. Find Greatest Common Divisor of Array
+
+// class Solution {
+// public:
+//     int findGCD(vector<int>& nums) {
+//         sort(nums.begin(), nums.end());
+//         int a = nums[0];
+//         int b = nums[nums.size() - 1];
+//         while (a % b) {
+//             int c = a % b;
+//             a = b;
+//             b = c;
+//         }
+//         return b;
+//     }
+// };
+
