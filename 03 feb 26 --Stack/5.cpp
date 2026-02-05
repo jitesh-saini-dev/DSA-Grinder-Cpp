@@ -4,25 +4,22 @@
 using namespace std;
 int main()
 {
-    string s1 = "Dog";
-    string s2 = "Cat";
+    string s1 = "hello";
+    string s2 = "world";
     stack<char> st;
     string ans = "";
-
     for (auto x : s1)
     {
         st.push(x);
     }
-
     for (auto x : s2)
     {
         st.push(x);
     }
-
-    while ((!st.empty()))
+    while (!st.empty())
     {
         ans += st.top();
         st.pop();
     }
-    cout << ans << " ";
+    cout << ans;
 }

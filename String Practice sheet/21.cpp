@@ -1,4 +1,4 @@
-// 20. Count number of uppercase letters
+// 21. Count number of lowercase letters
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -10,7 +10,7 @@ int main()
 
     for (int i = 0; i < s.length(); i++)
     {
-        if (s[i] >= 'A' && s[i] <= 'Z')
+        if (s[i] >= 'a' && s[i] <= 'z')
         {
             count++;
         }

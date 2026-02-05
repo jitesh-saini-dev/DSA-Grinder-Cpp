@@ -8,12 +8,12 @@ int main()
     {
         s.push(x);
     }
-    int i=0;
+    int i = 0;
     while ((!s.empty()))
     {
-       ss[i]=s.top();
-       i++;
-       s.pop();
+        ss[i] = s.top();
+        i++;
+        s.pop();
     }
-    cout<<ss<<" ";
+    cout << ss << " ";
 }

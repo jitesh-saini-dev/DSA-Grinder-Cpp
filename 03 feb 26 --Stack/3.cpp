@@ -1,17 +1,20 @@
+// Reverse a string using stack.
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    stack<char> s;
-    string ss = "Hello";
-    for (auto x : ss)
+    string s = "Hello";
+    stack<char> st;
+    for (auto x : s)
     {
-        s.push(x);
+        st.push(x);
     }
-
-    while ((!s.empty()))
+    while (!st.empty())
     {
-        cout << s.top() << " ";
-        s.pop();
+        cout << st.top() << " ";
+        st.pop();
     }
+    // cout << s; // refrence pe jake change nhi hua mtlb orginal string same h.
+    
 }

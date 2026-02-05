@@ -1,14 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
-    stack<int>s;
-    s.push(1);
-    s.push(2);
-    s.push(3);
-    while ((!s.empty()))
+int main()
+{
+    stack<int> st;
+    st.push(1);
+    st.push(2);
+    st.push(3);
+    st.pop();
+    st.push(4);
+    while (!st.empty())
     {
-        cout<<s.top()<<" ";
-        s.pop();
+        cout << st.top();
+        st.pop();
     }
-    
 }
