@@ -1,4 +1,4 @@
-//minimum element of queue--
+// delete first and last element of queue
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -11,13 +11,18 @@ int main()
     q.push(4);
     q.push(5);
 
-    int min = INT_MAX;
+    q.pop();
+    vector<int> v;
+
     while (!q.empty())
     {
-        if(q.front()<min){
-            min=q.front();
-        };
+        v.push_back(q.front());
         q.pop();
     }
-    cout << min;
+    v.pop_back();
+
+    for (int x : v)
+    {
+        cout << x << " ";
+    }
 }

@@ -1,4 +1,4 @@
-// print  even odd count of queue
+// Return minimum element of queue
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -11,18 +11,14 @@ int main()
     q.push(4);
     q.push(5);
 
-    int even=0;
-    int odd=0;
-
+    int min = INT_MAX;
     while (!q.empty())
     {
-        if (q.front() % 2 == 0)
+        if (q.front() < min)
         {
-            even++;
-        }
-        else odd++;
+            min = q.front();
+        };
         q.pop();
     }
-    cout<<even<<" ";
-    cout<<odd;
+    cout << min;
 }

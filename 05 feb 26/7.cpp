@@ -1,4 +1,4 @@
-// print only sum of queue
+// Return maximum value of queue
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -11,11 +11,14 @@ int main()
     q.push(4);
     q.push(5);
 
-    int sum = 0;
+    int max = 0;
     while (!q.empty())
     {
-        sum += q.front();
+        if (q.front() > max)
+        {
+            max = q.front();
+        }
         q.pop();
     }
-    cout << sum;
+    cout << max;
 }

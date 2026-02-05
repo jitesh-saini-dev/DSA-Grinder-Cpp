@@ -1,4 +1,5 @@
-//reverse queue using vector
+// print only even values of queue
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -8,17 +9,14 @@ int main()
     q.push(2);
     q.push(3);
     q.push(4);
-
-    vector<int> v;
+    q.push(5);
 
     while (!q.empty())
     {
-        v.push_back(q.front());
+        if (q.front() % 2 == 0)
+        {
+            cout << q.front() << " ";
+        }
         q.pop();
-    }
-    reverse(v.begin(), v.end());
-    for (auto x : v)
-    {
-        cout << x << " ";
     }
 }

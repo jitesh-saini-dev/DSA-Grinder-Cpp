@@ -10,8 +10,7 @@ int main()
     q.push(5);
     while (!q.empty())
     {
-       cout<<q.front()<<" ";
-       q.pop();
+        cout << q.front() << " ";
+        q.pop();
     }
-    
 }

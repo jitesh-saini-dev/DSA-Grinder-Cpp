@@ -1,5 +1,4 @@
-// print only even values of queue
-
+// return the sum of all values of queue
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -9,13 +8,13 @@ int main()
     q.push(2);
     q.push(3);
     q.push(4);
-
+    q.push(5);
+    int sum = 0;
     while (!q.empty())
     {
-        if (q.front() % 2 == 0)
-        {
-            cout << q.front();
-        }
+        sum += q.front();
         q.pop();
     }
+
+    cout << sum;
 }

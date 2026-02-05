@@ -1,7 +1,8 @@
-// delete first and last element of queue
+// Remove first k element from queue
 
 #include <bits/stdc++.h>
 using namespace std;
+
 int main()
 {
     queue<int> q;
@@ -11,19 +12,23 @@ int main()
     q.push(4);
     q.push(5);
 
-    q.pop();
-    stack<int> s;
+    int k = 3;
+
+    if (k > q.size())
+    {
+        k = q.size();
+    }
+
+    for (int i = 0; i < k; i++)
+    {
+        q.pop();
+    }
 
     while (!q.empty())
     {
-        s.push(q.front());
+        cout << q.front() << " ";
         q.pop();
     }
-    s.pop();
-    while (!s.empty())
-    {
-        cout << s.top();
-        s.pop();
-    }
-    
+
+    return 0;
 }
