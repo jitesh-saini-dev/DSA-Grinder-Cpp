@@ -20,14 +20,12 @@ int main()
         ans.push_back(store);
     }
 
-     for (int i = 0; i < row; i++)
-    { 
-        vector<int> store;
+    for (int i = 0; i < row; i++)
+    {
         for (int j = 0; j < col; j++)
         {
-            cout<<ans[j][i]<<" ";
+            cout << ans[j][i] << " ";
         }
-        cout<<endl;
+        cout << endl;
     }
-
 }
