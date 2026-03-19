@@ -6,7 +6,7 @@ void print(int i)
     {
         return;
     }
-    cout << i<<"                   ";
+    cout << i<<" ";
     print(i + 1);
 }
 int main()
