@@ -13,7 +13,7 @@ void sorted(vector<int>& v, int i)
         return;
     }
 
-    sorted(v, i + 1);         
+    sorted(v, i + 1);      
 }
 
 int main()
