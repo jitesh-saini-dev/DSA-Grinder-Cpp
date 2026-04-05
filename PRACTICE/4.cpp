@@ -60,7 +60,24 @@ void printlength(node *&head)
         count++;
         temp = temp->next;
     }
-    cout << "Length of LL is: " << count;
+    cout << "Length of LL is: " << count<<endl;
+}
+
+void insertatgivenposi(node *&head, int posi, int val)
+{
+    node *newnode = new node(val);
+    node *slow = head;
+    node *fast = head;
+
+    int i = 0;
+    while (i < posi)
+    {
+        slow = fast;
+        fast = fast->next;
+        i++;
+    }
+    slow->next = newnode;
+    newnode->next = fast;
 }
 
 void printdata(node *head)
@@ -88,6 +105,10 @@ int main()
     insertlast(head);
     printdata(head);
     deletelast(head);
+    printdata(head);
+    printlength(head);
+
+    insertatgivenposi(head, 3, 1000);
     printdata(head);
     printlength(head);
 }
